@@ -1,0 +1,45 @@
+
+.mainBgColor
+{
+    background-color: #1abc9c;
+}
+.mainColor
+{
+    color:#fff;
+}
+.title h2{
+    font-size:4rem;
+    font-weight: bold;
+    color: #fff;
+} 
+
+.line
+{
+    width:70px;
+    position: relative;
+    margin: auto;
+}
+.line::after
+{
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    top:50%;
+    left: 0;
+    background-color: #fff;
+    transform: translateX(-100px);
+    border-radius: 0.3rem;
+}
+.line::before
+{
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    top:50%;
+    right: 0;
+    background-color: #fff;
+    transform: translateX(100px);
+    border-radius: 0.3rem;
+}

@@ -1,0 +1,75 @@
+.btnBg
+{
+    background-color: #1abc9c;
+    border-radius:10px;
+    font-size:20px;
+    padding: 8px 15px;
+}
+.btnClose
+{
+    color: #1abc9c  !important;
+    font-size:40px;
+    font-weight: bold;
+    margin: -0.5rem -0.5rem -0.5rem auto;
+    border-color: transparent;
+    background-color: #fff;
+}
+
+.displayModal
+{
+    z-index: 500000 !important;
+    width: 100% !important;
+    background-color: rgba(0 ,0,0,.5) !important;
+}
+.modalDialog
+{
+   top:80px!important;
+}
+.itemImg
+{
+    border-radius:15px;
+}
+.bottomHeader
+{
+    border-bottom: 1px solid #fff !important;
+    /* color: #1abc9c  !important; */
+}
+.topHeader
+{
+    border-top: 1px solid #fff !important;   
+}
+.title h2{
+    font-size:4rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.line
+{
+    width:70px;
+    position: relative;
+    margin: auto;
+}
+.line::after
+{
+    content: "";
+    width: 130px;
+    height: 5px;
+    position: absolute;
+    top:50%;
+    left: 0;
+    background-color: #2c3e50;
+    transform: translateX(-130px);
+    border-radius: 0.3rem;
+}
+.line::before
+{
+    content: "";
+    width: 130px;
+    height: 5px;
+    position: absolute;
+    top:50%;
+    right: 0;
+    background-color: #2c3e50;
+    transform: translateX(130px);
+    border-radius: 0.3rem;
+}
