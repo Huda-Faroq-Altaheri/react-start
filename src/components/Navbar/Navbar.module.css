@@ -8,7 +8,6 @@
     width: 100%;
     z-index: 999;
     font-size: 20px;
-
 }
 .main a
 {
@@ -20,15 +19,6 @@ nav ul li a
 {
     transition: all 0.5s !important;
 }
-nav ul li a:hover
-{
-    color: #1abc9c !important;
-}
-/* .main .active
-{
-    color: #fff !important;
-    background-color: #1abc9c !important;
-} */
 .logo{
     font-size:2rem;
     word-spacing:0.5rem;

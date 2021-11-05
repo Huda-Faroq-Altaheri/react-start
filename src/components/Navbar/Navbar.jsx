@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Navbar.module.css";
+import $ from "jquery";
 
 function Navbar()
 {
+  useEffect(() => {
+    $('.active').on("click",function(){
+      $('a').css("backgroundColor","");
+      $(this).css({"backgroundColor":"#1abc9c","color":"#fff"});
+    })
+  }, [])
+
     return(
         <>
 <nav className={`navbar navbar-expand-lg navbar-dark ${style.main}`}>
@@ -12,19 +20,19 @@ function Navbar()
       MENU <span className="navbar-toggler-icon"></span>
     </button>
     <div className={`collapse navbar-collapse`} id="navbarSupportedContent">
-      <ul className={`navbar-nav ms-auto mb-2 mb-lg-0`}>
+      <ul className={`${style.navbarNav} navbar-nav ms-auto mb-2 mb-lg-0`}>
     
         <li className={`nav-item`}>
-          <a className={`${style.active} nav-link  rounded`} href="#Portfolio" aria-current="page" >PORTFOLIO</a>
+          <a className={`active nav-link  rounded`} href="#Portfolio" aria-current="page" >PORTFOLIO</a>
         </li>
         <li className={`nav-item`}>
-          <a className={`nav-link rounded `} href="#about">ABOUT</a>
+          <a className={`active nav-link rounded `} href="#about">ABOUT</a>
         </li>
         <li className={` nav-item`}>
-          <a className={`nav-link rounded`} href="#contact" >CONTACT</a>
+          <a className={`active nav-link rounded`} href="#contact" >CONTACT</a>
         </li>
         <li className={`nav-item`}>
-          <a  className={`nav-link rounded`} href="#location">LOCATION</a>
+          <a className={`active nav-link rounded`} href="#location">LOCATION</a>
         </li>
 
       </ul>    
